@@ -1,6 +1,6 @@
 //!Preprocessor : Its means that 
-              # -> Preprocessor. 
-              #include<stdio.h> -> This is the header file also.
+                # -> Preprocessor. 
+                #include<stdio.h> -> This is the header file also.
 
      int-> 4 bytes -> 4*8=32 bits.
      float->4 bytes -> 4*8=32 bits.
@@ -15,4 +15,3 @@
 Memory Alocation:
      static: which means that the Memory alocated during compile time.
      dynamic: which means that the Memory alocated during run time.
-     

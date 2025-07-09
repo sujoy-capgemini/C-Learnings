@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void reverse(int arr[],int si,int ei){
     int i=si;
     int j=ei;
