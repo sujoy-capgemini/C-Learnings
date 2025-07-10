@@ -1,0 +1,11 @@
+socket pogramming:
+     *socket pogramming is the way to establish communication between server side and client side.
+     *it is the powerful way to handel network communication.
+
+     Type:
+         1.Tcp socket [stream socket]
+         2.Udp socket [Datagram socket]
+
+    gb
+Header file :
+    
