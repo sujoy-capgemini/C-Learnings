@@ -6,6 +6,5 @@ socket pogramming:
          1.Tcp socket [stream socket]
          2.Udp socket [Datagram socket]
 
-    gb
 Header file :
     
