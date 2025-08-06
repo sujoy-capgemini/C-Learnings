@@ -19,7 +19,13 @@ pass by value :
 
 passign by refernce :
    *The address of the variable is passed.
-   *original value change 
+   *original value change.
+
+NULL pointer 
+is a special pointer
+value does not point to any valid memory location
+int *ptr = NULL;
+
 
 
 Strature :
@@ -34,8 +40,8 @@ access structure members using a pointer -> this operator.
 
 
 dynamic memory allocation use like : malloc
-struct Student *s = (struct Student *)malloc(sizeof(struct Student));
-
+   EX:
+   Book *ptr=(Book *)malloc(sizeof(Book));
 
 
 Memory Alocation:
