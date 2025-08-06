@@ -40,23 +40,29 @@
 
 #include <stdio.h>
 
-typedef struct Calculator{
+typedef struct Cal{
     int x;
     int y;
-}Calculator;
+}Cal;
 
-int add(Calculator *nums){
-    int x=nums->x;
-    int y=nums->y;
-    return x+y;
+int add(Cal *ptr){
+    int x=ptr->x;
+    int y=ptr->y;
+    int ans=(x+y);
+    return ans;
 }
+
 int main() {
     //Code
-    Calculator nums;
-    printf("Enter 1st Number :");
-    scanf("%d",&nums.x);
-    printf("Enter 2nd Number :");
-    scanf("%d",&nums.y);
-    printf("Addision : %d\n",add(&nums));
+    Cal c;
+    Cal *ptr=&c;
+    printf("Enter 1 Number :");
+    scanf("%d",&ptr->x);
+
+    printf("Enter 2 Number :");
+    scanf("%d",&ptr->y);
+
+    int result=add(ptr);
+    printf("Addision : %d",result);
     return 0;
 }
