@@ -1,26 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Queue
-{
+typedef struct Queue{
     int size;
     int front;
     int rear;
     int *arr;
 } Queue;
 
-int isFull(Queue *q)
-{
+int isFull(Queue *q){
     return q->rear == q->size - 1;
 }
 
-int isEmpty(Queue *q)
-{
+int isEmpty(Queue *q){
     return q->front == q->rear;
 }
 
-void enqueue(Queue *q, int val)
-{
+void enqueue(Queue *q, int val){
     if (isFull(q))
     {
         printf("Queue is Full\n");
@@ -33,8 +29,7 @@ void enqueue(Queue *q, int val)
     }
 }
 
-void queue_print(Queue *q)
-{
+void queue_print(Queue *q){
     if (isEmpty(q))
     {
         printf("Queue is EMpty");
@@ -47,8 +42,7 @@ void queue_print(Queue *q)
     printf("\n");
 }
 
-int dequeue(Queue *q)
-{
+int dequeue(Queue *q){
     int x = -1;
     if (isEmpty(q))
     {
@@ -63,8 +57,7 @@ int dequeue(Queue *q)
     return x;
 }
 
-int main()
-{
+int main(){
     Queue q;
     q.size = 100;
     q.front = q.rear = -1;
